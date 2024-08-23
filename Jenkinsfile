@@ -37,7 +37,7 @@ pipeline {
             steps {
                 script {
                     withCredentials([string(credentialsId: 'dockerPass', variable: 'dockerPassword')]) {
-                        sh "docker login -u naresh2603 -p ${dockerPassword}"
+                        sh "docker login -u dockerrenu1991 -p ${dockerPassword}"
                         sh 'docker push dockerrenu1991/helm-rockets:v1'
                     }
                 }
